@@ -1,35 +1,63 @@
-# 📱 Telephone Number Validator (USA)
+# ☎️ Telephone Number Validator
 
-Este proyecto es una solución al reto **"Build a Telephone Number Validator"** de [freeCodeCamp.org](https://www.freecodecamp.org/), en el cual se debe construir una aplicación que valide números telefónicos de Estados Unidos en diversos formatos.
+¡Bienvenido al validador más estadounidense que podrás encontrar!  
+Este proyecto te dirá si un número telefónico **"suena" bien** según los estándares de EE. UU. — y lo hace desde dentro de un iPhone 16 Pro digital 🧠📱
 
-## 🎯 Objetivo
+---
 
-Crear una aplicación funcionalmente similar a [telephone-number-validator.freecodecamp.rocks](https://telephone-number-validator.freecodecamp.rocks), capaz de verificar si un número telefónico ingresado por el usuario cumple con las reglas de formato válidas en EE. UU.
+## 🧠 ¿Qué hace este proyecto?
 
-### ✅ Formatos válidos aceptados:
+Verifica si un número telefónico ingresado por el usuario es **válido** en Estados Unidos. Acepta múltiples formatos, pero siempre con reglas claras:
 
-- `1 555-555-5555`
-- `1 (555) 555-5555`
-- `1(555)555-5555`
-- `1 555 555 5555`
-- `5555555555`
+- El **código de área** es obligatorio (por ejemplo, `555`)
+- Si se incluye el **código de país**, debe ser **1**
+- Se toleran guiones, espacios y paréntesis, siempre que el orden sea correcto
+
+### 📞 Formatos válidos:
+
 - `555-555-5555`
 - `(555)555-5555`
-
-> Nota: El código de área es **obligatorio**. Si se proporciona un código de país, debe ser `1`.
-
----
-
-## 🛠️ Tecnologías utilizadas
-
-- **HTML + CSS**: Estructura y estilo visual personalizado tipo *iPhone con Dynamic Island*.
-- **JavaScript (Vanilla)**: Lógica de validación con expresiones regulares (regex).
-- **Responsividad**: Adaptado para múltiples tamaños de pantalla (mobile, tablet, desktop).
-- **Animaciones**: Inspiradas en la *Dynamic Island* del iPhone, para mostrar resultados de forma moderna y llamativa.
+- `1 555 555 5555`
+- `1(555)555-5555`
+- `5555555555`
+- ...y otros similares
 
 ---
 
-## 🚀 Cómo probarlo
+## 📲 ¿Y por qué dentro de un iPhone?
 
-1. Clona el repositorio
-2. Abre el preview desde el deploy de GitHub Pages
+Porque este no es un simple validador de texto.  
+La validación sucede dentro de una interfaz inspirada en el **iPhone 16 Pro**, con una animación que simula la **Dynamic Island** al mostrar los resultados.
+
+---
+
+## 🚀 Demo
+
+👉 [Ver proyecto en vivo (GitHub Pages)](https://helixguardi.github.io/Telephone-Number-Validator/)  
+
+---
+
+## 📷 Captura de pantalla
+
+![App Screenshot](./screenshot.png)  
+_(La interfaz se adapta a pantallas pequeñas, medianas y grandes)_
+
+---
+
+## ⚙️ Tecnologías utilizadas
+
+- **HTML5**  
+- **CSS3** (con animaciones personalizadas y diseño responsive)  
+- **JavaScript (Vanilla)** – para validación con **expresiones regulares** (regex) y manejo de eventos
+
+---
+
+## 🏗️ Estructura del proyecto
+
+```bash
+telephone-number-validator/
+│
+├── index.html         # Maquetación principal del proyecto
+├── Responsive-validator-css.css  # Estilos visuales (con iPhone incluido)
+├── script.js          # Lógica de validación con regex + historial de resultados
+└── README.md          # Este archivo
