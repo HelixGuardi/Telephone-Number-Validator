@@ -1,0 +1,278 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #F5F5F5;
+}
+
+body {
+  overflow-y: hidden;
+  margin: 0;
+  padding: 40px 10px;
+  width: 100dvw;
+  height: auto;
+  color: #fff;
+  background: linear-gradient(to top, #111, #2F2F3F);
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  display: flex;
+  justify-content: center;
+}
+
+main{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+}
+
+header{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-media-links-container{
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
+}
+
+.social-media-links-container a {
+  display: inline-block;
+  margin: 0 20px;
+  font-size: 1.2rem;
+  transition: transform 0.3s;
+}
+
+.social-media-links-container a:hover {
+  transform: scale(1.2);
+  text-shadow: 0px 0px 20px #5F5F5F;
+}
+
+.social-media-links-container a i {
+  margin: 0 7px;
+  font-size: 1.5rem;
+}
+
+.phone-wrapper{
+  border: 5px solid #2A2A2A;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  border-radius: 55px;
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.phone{
+  width: 100%;
+  max-width: 390px;
+  aspect-ratio: 390/800;
+  height: auto;
+  border: 6px solid #000;
+  border-radius: 50px;
+  position: relative;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 1);
+  background-color: #000;
+  background-image: url('https://i.pinimg.com/1200x/73/11/27/731127322f9b201f3dae8cc7c3642b93.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.notch{
+  position: absolute;
+  top: 7px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 95px;
+  height: 27px;
+  background-color: #000;
+  border-radius: 50px;
+  z-index: 10;
+}
+
+.front-camera{
+  position: fixed;
+  width: 23px;
+  height: 23px;
+  border: 3px solid #050505;
+  background: radial-gradient(#030323, #050505);
+  border-radius: 15px;
+  right: 4px;
+  top: 2px;
+}
+
+.front-camera-eye{
+  position: fixed;
+  width: 5px;
+  height: 5px;
+  background: radial-gradient(rgba(125, 125, 125, 0.1));
+  box-shadow: 0px 0px 10px #555;
+  top: 12px;
+  right: 12px;
+  border-radius: 10px;
+}
+
+.screen{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 35px 15px;
+  border-radius: 45px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.screen h2{
+  border-bottom: 3px solid #ABABBA;
+  border-radius: 3px;
+  text-shadow: 0 0 25px #0F0F0F;
+}
+
+.screen input{
+  width: 100%;
+  height: 45px;
+  padding: 10px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 2px solid #ABABBA;
+  border-radius: 10px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+}
+
+.buttons{
+  width: 100%;
+  padding: 15px 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.buttons button{
+  width: 100%;
+  height: 40px;
+  border: 2px solid #ABABBA;
+  border-radius: 15px;
+  background: none;
+  color: #fff;
+  font-size: 17px;
+  transition: 0.3s ease-in-out;
+}
+
+#check-btn:hover{
+  transform: scale(1.1);
+  background-color: rgba(0, 100, 0, 0.5);
+}
+
+#clear-btn:hover{
+  transform: scale(1.1);
+  background-color: rgba(100, 0, 0, 0.5);
+}
+
+.hide-result{
+  display: none;
+}
+
+.show-result {
+  width: 95%;
+  height: 150px;
+  padding: 25px;
+  border: none;
+  border-radius: 45px;
+  background-color: rgba(0, 0, 0, 1);
+  text-align: center;
+  font-size: 19px;
+  position: absolute;
+  top: 7px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  scrollbar-width: none; 
+  animation: .5s dynamicIslandIn;
+}
+
+@keyframes dynamicIslandIn {
+  0% {
+    transform: scaleX(0.3) scaleY(0.1);
+    opacity: 0;
+    box-shadow: 0 0 0 rgba(0,0,0,0);
+  }
+  60% {
+    transform: scaleX(1.05) scaleY(1.1);
+    opacity: 1;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+  }
+  100% {
+    transform: scaleX(1) scaleY(1);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+  }
+}
+
+.show-result::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+.show-result:hover::-webkit-scrollbar {
+  width: 6px;
+}
+
+.show-result:hover::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 6px;
+}
+
+.result-message{
+  margin: 0;
+}
+
+@media (min-width: 799px){
+  body{
+    height: 100dvh;
+  }
+}
+
+@media (max-width: 480px) {
+  body{
+    overflow-y: auto;
+  }
+
+  .screen input {
+    width: 90%;
+  }
+
+  .buttons {
+    flex-direction: column;
+  }
+
+  .buttons button {
+    width: 100%;
+  }
+
+  .show-result {
+    font-size: 16px;
+  }
+}
